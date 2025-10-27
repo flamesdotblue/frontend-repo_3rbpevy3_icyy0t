@@ -2,6 +2,7 @@ import React from 'react';
 import Hero from './components/Hero';
 import Features from './components/Features';
 import Process from './components/Process';
+import CaseStudies from './components/CaseStudies';
 import SocialProof from './components/SocialProof';
 import { MessageCircle } from 'lucide-react';
 
@@ -21,6 +22,7 @@ function App() {
           <nav className="hidden md:flex items-center gap-6 text-sm">
             <a href="#process" className="text-gray-600 hover:text-gray-900">Process</a>
             <a href="#testimonials" className="text-gray-600 hover:text-gray-900">Results</a>
+            <a href="#case-studies" className="text-gray-600 hover:text-gray-900">Case Studies</a>
             <a href="#consult" className="text-gray-600 hover:text-gray-900">Pricing</a>
             <a href={whatsappLink} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-600 text-white font-semibold shadow hover:bg-blue-700">
               <MessageCircle className="w-4 h-4" /> Chat on WhatsApp
@@ -33,6 +35,7 @@ function App() {
         <Hero />
         <Features />
         <Process />
+        <CaseStudies />
         <SocialProof />
       </main>
 
@@ -53,6 +56,7 @@ function App() {
           <p>© {new Date().getFullYear()} Flames.Blue — AI‑powered MVPs, fast.</p>
           <div className="flex items-center gap-6">
             <a href="#process" className="hover:text-gray-900">Process</a>
+            <a href="#testimonials" className="hover:text-gray-900">Results</a>
             <a href="#consult" className="hover:text-gray-900">Get Estimate</a>
           </div>
         </div>

@@ -8,7 +8,7 @@ const Hero = () => {
 
   return (
     <section className="relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-blue-50 via-white to-white" />
+      <div className="absolute inset-0 bg-gradient-to-b from-blue-50 via-white to-white pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto px-6 md:px-8 pt-24 md:pt-28">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -66,7 +66,7 @@ const Hero = () => {
           <div className="relative h-[360px] sm:h-[420px] md:h-[520px] lg:h-[560px] rounded-2xl overflow-hidden bg-gradient-to-br from-slate-900 via-indigo-900 to-blue-700">
             <div className="absolute inset-0 pointer-events-none bg-gradient-to-t from-black/20 via-transparent to-transparent" />
             <Spline
-              scene="https://prod.spline.design/4cHQr84zOGAHOehh/scene.splinecode"
+              scene="https://prod.spline.design/FduaNp3csZktbOi3/scene.splinecode"
               style={{ width: '100%', height: '100%' }}
             />
           </div>
