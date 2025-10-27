@@ -1,5 +1,5 @@
 import React from 'react';
-import { Zap, DollarSign, Cpu, Layers, CheckCircle2 } from 'lucide-react';
+import { Zap, DollarSign, Cpu, Layers, CheckCircle2, FileCheck2, Shield, Ruler } from 'lucide-react';
 
 const items = [
   {
@@ -22,6 +22,15 @@ const items = [
     title: 'Scalable Architecture',
     desc: 'MVPs that grow into production products',
   },
+];
+
+const deliverables = [
+  'Clickable UI prototype',
+  'Core feature implementation',
+  'Auth & roles (as needed)',
+  'Production deployment',
+  'Analytics & basic telemetry',
+  'Handover docs + walkthrough',
 ];
 
 const Features = () => {
@@ -47,6 +56,31 @@ const Features = () => {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Deliverables included */}
+        <div className="mt-12 rounded-2xl border border-gray-200 p-6 bg-gradient-to-br from-blue-50 to-indigo-50">
+          <div className="flex items-center gap-3">
+            <FileCheck2 className="w-5 h-5 text-blue-700" />
+            <h3 className="text-xl font-semibold text-gray-900">What you get in week one</h3>
+          </div>
+          <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+            {deliverables.map((d) => (
+              <div key={d} className="flex items-start gap-2">
+                <CheckCircle2 className="w-4 h-4 text-green-600 mt-0.5" />
+                <span className="text-gray-700">{d}</span>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-6 flex flex-wrap items-center gap-4 text-sm text-gray-700">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-gray-200">
+              <Shield className="w-4 h-4 text-blue-600" /> Quality gates on every merge
+            </div>
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-gray-200">
+              <Ruler className="w-4 h-4 text-blue-600" /> Scope-first planning to avoid surprises
+            </div>
+          </div>
         </div>
       </div>
     </section>
